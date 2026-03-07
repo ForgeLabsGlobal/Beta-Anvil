@@ -1,0 +1,23 @@
+def double_numbers(number_list):
+    # 1. List creation: Make a new empty list to hold our answers
+    results = []
+    
+    # 2. Iterating through lists: Go through each number one by one
+    for num in number_list:
+        
+        # Multiply the current number by 2
+        new_value = num * 2
+        
+        # 3. List methods: Use .append() to add the new value to our list
+        results.append(new_value)
+        
+    # 4. Return values: Send the final list back
+    return results
+
+# --- Testing the function ---
+# 5. Parameters: We pass 'my_numbers' into the function
+my_numbers = [1, 2, 3, 4, 5]
+final_answer = double_numbers(my_numbers)
+
+print("Original list:", my_numbers)
+print("Doubled list:", final_answer)
